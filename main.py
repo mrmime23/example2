@@ -14,8 +14,8 @@ from coloredLayout1 import O as CLayout1
 
 BgCOL = (.53, .53, .53, 1)
 WinDO.Y = BgCOL
-AGE = 7
-Name = ""
+oAGE = 7
+oName = ""
 VarR = 0
 VarS = 0
 VarT = 0
@@ -53,13 +53,13 @@ class Scn1(ScreeN):
         self.add_widget(boxL1)
 
     def Func1(self):
-        global AGE, Name
-        Name = self.TxtIn1.text
-        AGE = self.TxtIn2.text
-        AGE = ToInt(AGE)
-        if AGE == False or AGE < 7:
-            AGE = 7
-            self.TxtIn2.text = str(AGE)
+        global oAGE, oName
+        oName = self.TxtIn1.text
+        oAGE = self.TxtIn2.text
+        oAGE = ToInt(oAGE)
+        if oAGE == False or oAGE < 7:
+            oAGE = 7
+            self.TxtIn2.text = str(oAGE)
             pop_1 = POPuP(title='Error', content=LabeL(text='Возраст должен быть больше 7'), size_hint=(None, None), size=(300, 300), pos_hint={'center_x': 0.5, 'center_y': 0.5})
             pop_1.open()
         else:
@@ -137,9 +137,9 @@ class Scn3(ScreeN):
 class ApPMain(ApP):
     def build(self):
         MG = SCrEenMG()
-        MG.add_widget(Scn1(name='Scn1'))
-        MG.add_widget(Scn2(name='Scn2'))
-        MG.add_widget(Scn3(name='Scn3'))
+        MG.add_widget(Scn1(oName='Scn1'))
+        MG.add_widget(Scn2(oName='Scn2'))
+        MG.add_widget(Scn3(oName='Scn3'))
         return MG
 
 AppMain = ApPMain()
