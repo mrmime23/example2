@@ -1,7 +1,7 @@
 from kivy.uix.boxlayout import BL
 from kivy.graphics import C, R
 
-class CLayout(BL):
+class first_Layout(BL):
     def __init__(self, color_param, **args):
         super().__init__(**args)
         self.p = '10dp'
@@ -12,6 +12,6 @@ class CLayout(BL):
 
         self.bind(size=self._u, pos=self._u)
 
-    def _u(self, i, v):
+    def ClassFunction(self, i, v):
         self.r.pos = i.pos
         self.r.size = i.size
