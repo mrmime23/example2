@@ -1,7 +1,7 @@
 from kivy.uix.boxlayout import BoxLayout
 from kivy.graphics import Color, Rectangle, Ellipse
 
-class C1(BoxLayout):   # Unklarer Name
+class second_Layout(BoxLayout):   # Unklarer Name
     def __init__(self, c, **kwargs):   # Kurzer, unklarer Name für den Parameter
         super().__init__(**kwargs)
         self.p = '10dp'   # Kurzer, unklarer Name
