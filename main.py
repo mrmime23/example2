@@ -29,16 +29,16 @@ def ToInt(V):
 class Scn1(ScreeN):
     def __init__(self, **args_1):
         super().__init__(**args_1)
-        labe1 = LabeL(text=InSt1)
+        Labe1 = LabeL(text=InSt1)
         boxL1 = BoXLayOUT(orientation='vertical', padding=8, spacing=8)
-        txt1 = '[i][color=#003300]'+'Введите имя:'+'[/color][/i]'
-        labe2 = LabeL(text=txt1, halign='right', markup=True)
+        Txt1 = '[i][color=#003300]'+'Введите имя:'+'[/color][/i]'
+        labe2 = LabeL(text=Txt1, halign='right', markup=True)
         self.TxtIn1 = TextInPUT(multiline=False)
         labe3 = LabeL(text='Введите возраст:', halign='right')
         self.TxtIn2 = TextInPUT(text='7', multiline=False)
         self.But1 = ButTon(text='Начать', size_hint=(0.3, 0.2), pos_hint={'center_x': 0.5})
-        col1 = (1, 1, 0, .5)
-        self.But1.background_color = col1
+        Col1 = (1, 1, 0, .5)
+        self.But1.background_color = Col1
         self.But1.on_press = self.Func1
         boxL2 = BoXLayOUT(size_hint=(0.8, None), height='30sp')
         boxL3 = BoXLayOUT(size_hint=(0.8, None), height='30sp')
@@ -46,7 +46,7 @@ class Scn1(ScreeN):
         boxL2.add_widget(self.TxtIn1)
         boxL3.add_widget(labe3)
         boxL3.add_widget(self.TxtIn2)
-        boxL1.add_widget(labe1)
+        boxL1.add_widget(Labe1)
         boxL1.add_widget(boxL2)
         boxL1.add_widget(boxL3)
         boxL1.add_widget(self.But1)
