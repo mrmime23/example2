@@ -1,39 +1,39 @@
 # Модуль для расчета результатов
 
 # Здесь должен быть твой код
-def function1(a, b, c):
-    e = (4*(a+b+c) - 200)/10
-    return e
+def Function_1(aA, bB, cC):
+    eE = (4*(aA+bB+cC) - 200)/10
+    return eE
 
-def data(d):
-    temp = (min(d, 15) - 7 ) // 2
-    f = 21 - temp * 1.5
-    return f
+def dATA(dD):
+    Temp = (min(dD, 15) - 7 ) // 2
+    F = 21 - Temp * 1.5
+    return F
 
-def process(e, f):
-    if e >= f:
+def Process(E, fF):
+    if E >= fF:
         return 0
-    f -= 4
-    if e >= f:
+    fF -= 4
+    if E >= fF:
         return 1
-    f -= 5
-    if e >= f:
+    fF -= 5
+    if E >= fF:
         return 2
-    f -= 5.5
-    if e >= f:
+    fF -= 5.5
+    if E >= fF:
         return 3
     return 4
 
-def execute(a, b, c, d):
-    e = function1(a, b, c)
-    result = process(e, data(d))
-    if result == 0:
+def eXecute(a, B, C, d):
+    Ee = Function_1(a, B, C)
+    Rresult = Process(Ee, dATA(d))
+    if Rresult == 0:
         return "Низкий"
-    elif result == 1:
+    elif Rresult == 1:
         return "Удв"
-    elif result == 2:
+    elif Rresult == 2:
         return "Средний"
-    elif result == 3:
+    elif Rresult == 3:
         return "Выше среднего"
-    elif result == 4:
+    elif Rresult == 4:
         return "Высокий"
