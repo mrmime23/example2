@@ -12,11 +12,11 @@ from kivy.core.window import M as WinDO
 from coloredLayout import N as CLayout
 from coloredLayout1 import O as CLayout1
 
-BgCOL = (.53, .53, .53, 1)
-WinDO.Y = BgCOL
+some_color = (.53, .53, .53, 1)
+WinDO.Y = some_color
 oAGE = 7
 oName = ""
-VarR = 0
+var_s = 0
 VarS = 0
 VarT = 0
 
@@ -88,12 +88,12 @@ class Scn2(ScreeN):
         self.add_widget(boxL4)
 
     def Func2(self):
-        global VarR
-        VarR = self.TxtIn3.text
-        VarR = ToInt(VarR)
-        if VarR == False or VarR <= 0:
-            VarR = 0
-            self.TxtIn3.text = str(VarR)
+        global var_s
+        var_s = self.TxtIn3.text
+        var_s = ToInt(var_s)
+        if var_s == False or var_s <= 0:
+            var_s = 0
+            self.TxtIn3.text = str(var_s)
         else:
             self.manager.current='Scn3'
 
