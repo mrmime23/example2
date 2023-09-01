@@ -16,7 +16,6 @@ BGDColor = (.53, .53, .53, 1)
 WinDO.Y = BGDColor
 oAGE = 7
 oName = ""
-var_s = 0
 VarS = 0
 VarT = 0
 
