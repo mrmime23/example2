@@ -12,8 +12,8 @@ from kivy.core.window import M as WinDO
 from coloredLayout import N as CLayout
 from coloredLayout1 import O as CLayout1
 
-some_color = (.53, .53, .53, 1)
-WinDO.Y = some_color
+BGDColor = (.53, .53, .53, 1)
+WinDO.Y = BGDColor
 oAGE = 7
 oName = ""
 var_s = 0
